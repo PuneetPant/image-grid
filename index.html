@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="header">
+
+        <h2><i class="material-icons">grid_on</i>Image Grid</h2>
+        <button class="button" onclick="shuffleCards()">Shuffle</button>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+
+            <div class="box prototype hidden">
+                <div class="box-inner">
+                    <div class="box-front">
+                        <img src="assets/placeHolderImage1.png" data-src=""
+                            onerror=this.src="assets/placeHolderImage1.png">
+                    </div>
+                    <div class="box-back">
+                        <i class="material-icons" onclick="handleDelete(this)">delete</i>
+                        <p>Dummy Text</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js//helper.js"></script>
+    <script src="api/index.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
+
+</html>
